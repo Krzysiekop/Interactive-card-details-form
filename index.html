@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="cards">
+        <div class="front">
+          <img
+            id="front-card"
+            src="/images/bg-card-front.png"
+            alt=""
+            srcset=""
+          />
+          <img id="card-logo" src="/images/card-logo.svg" alt="" srcset="" />
+          <div class="front-numbers">0000 0000 0000 0000 0000</div>
+          <div class="front-exp">
+            <span class="card-exp-m">12</span>/<span class="card-exp-y"
+              >12</span
+            >
+          </div>
+          <div class="front-owner">Jon doe</div>
+        </div>
+        <div class="back">
+          <img id="back-card" src="/images/bg-card-back.png" alt="" srcset="" />
+          <div class="back-cv">123</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="card__form">
+          <form>
+            <div class="card-details">
+              <div class="form-group">
+                <label for="card_name">Cardholder Name</label>
+                <input
+                  id="card_name"
+                  type="text"
+                  placeholder="e.g. Jane Appleseed"
+                  autocomplete="off"
+                />
+                <p class="alert card_name_alert"></p>
+              </div>
+              <div class="form-group">
+                <label for="card_number">Card Number</label>
+                <input
+                  id="card_number"
+                  type="text"
+                  placeholder="e.g. 1234 5678 9123 0000"
+                  autocomplete="off"
+                />
+                <p class="alert card_number_alert"></p>
+              </div>
+            </div>
+
+            <div class="card-numbers">
+              <div class="form-group">
+                <label for="exp_date_m">Exp. Date (MM/YY)</label>
+                <div class="date-wrapper">
+                  <div>
+                    <input
+                      id="exp_date_m"
+                      type="text"
+                      name=""
+                      placeholder="MM"
+                    />
+                    <p class="alert exp_date_m_alert"></p>
+                  </div>
+                  <div>
+                    <input
+                      id="exp_date_y"
+                      type="text"
+                      name=""
+                      placeholder="YY"
+                    />
+                    <p class="alert exp_date_y_alert"></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input id="cvc" type="text" name="" placeholder="e.g 123" />
+                <p class="alert card_cvc_alert"></p>
+              </div>
+            </div>
+            <div class="alerts_group"></div>
+            <button class="conf_btn" type="submit">Confirm</button>
+          </form>
+        </div>
+        <div class="thank-you-wrapper">
+          <div class="thank-you">
+            <img src="images/icon-complete.svg" alt="" srcset="" />
+            <h1 class="thankyou-h1">Thank you!</h1>
+            <p class="thankyou-p">We've added your card details</p>
+            <button class="re-btn" type="submit">Continue</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">me</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
