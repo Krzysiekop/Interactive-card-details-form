@@ -70,7 +70,7 @@ document.querySelector(".conf_btn").addEventListener("click", function (prv) {
       document.querySelector("#cvc").style.borderColor = "red";
       pass = false;
     }
-    if (UserCardExM == "" || UserCardExM > 12 || UserCardExM <= 0) {
+    if (UserCardExM == "" || UserCardExM > 12 || UserCardExM <= 0 || isNaN(UserCardExM)) {
       alert = `Wrong format `;
       expDateMAlert.textContent = alert;
       document.querySelector("#exp_date_m").style.borderColor = "red";

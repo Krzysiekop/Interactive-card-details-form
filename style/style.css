@@ -14,7 +14,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: url(../images/bg-main-desktop.png);
-  background-size: contain;
+  background-size: 29% 100%;
   background-repeat: no-repeat;
 }
 
@@ -196,12 +196,23 @@ input:focus {
   color: bisque;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1300px) {
+  .container{
+
+  margin-left: 4rem;
+  }
+}
+
+
+@media only screen and (max-width: 1230px) {
   .container {
     flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0rem;
   }
   body {
     background-image: url(../images/bg-main-mobile.png);
+    background-size: 100% 20%;
   }
   #front-card {
     width: 307px;
