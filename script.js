@@ -76,7 +76,7 @@ document.querySelector(".conf_btn").addEventListener("click", function (prv) {
       document.querySelector("#exp_date_m").style.borderColor = "red";
       pass = false;
     }
-    if (UserCardExY == "" || UserCardExY.toString().length !== 2) {
+    if (UserCardExY == "" || UserCardExY.toString().length !== 2 || isNaN(UserCardExY)) {
       alert = `Wrong format `;
       expDateYAlert.textContent = alert;
       document.querySelector("#exp_date_y").style.borderColor = "red";
