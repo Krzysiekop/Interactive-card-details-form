@@ -64,7 +64,7 @@ document.querySelector(".conf_btn").addEventListener("click", function (prv) {
       document.querySelector("#card_name").style.borderColor = "red";
       pass = false;
     }
-    if (UserCarcvc == "" || UserCarcvc.toString().length !== 3) {
+    if (UserCarcvc == "" || UserCarcvc.toString().length !== 3 || isNaN(UserCardExY)) {
       alert = `Wrong format `;
       cvcAlert.textContent = alert;
       document.querySelector("#cvc").style.borderColor = "red";
